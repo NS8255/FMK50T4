@@ -1,0 +1,4 @@
+guide_reg_removal \
+	-design AllTestDemo0619 \
+	-cells {btn_state_reg[0] btn_state_reg[1] btn_state_reg[2] btn_state_reg[3] }
+	

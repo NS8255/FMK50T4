@@ -1,0 +1,334 @@
+Procise 2023.2
+SVN Version : 29712
+Build  time : 2024/01/23 11:45:29
+Start  time : 2024-06-20 14:49:25
+>>set_device fmk50t4
+  set_device elapsed_time 2.11 seconds, cpu_time 2.14 seconds
+  set_device used memory 550MB, procise used peak memory 640MB, current used memory 527MB
+>>load_design -stage_post_map -no_hier
+  -- Analyzing Verilog file 'C:/Users/23269/Desktop/QTestDemo/AllTestDemo0619/sources/AllTestDemo0619.v' (VERI-1482)
+  C:/Users/23269/Desktop/QTestDemo/AllTestDemo0619/sources/AllTestDemo0619.v(167): INFO: undeclared symbol 'clk_50M', assumed default net type 'wire' (VERI-2561)
+  read_phy_design C:/Users/23269/Desktop/QTestDemo/AllTestDemo0619/rundir/.25bed46ee5ec793ce98bb4282066ff45.phy
+  Read FDC C:/Users/23269/Desktop/QTestDemo/AllTestDemo0619/rundir/AllTestDemo0619_placed.fdc
+  load_design elapsed_time 1.08 seconds, cpu_time 1.14 seconds
+  load_design used memory 13MB, procise used peak memory 640MB, current used memory 579MB
+>>load_design -stage_elaborate -no_hier
+  -- Analyzing Verilog file 'C:/Users/23269/Desktop/QTestDemo/AllTestDemo0619/sources/AllTestDemo0619.v' (VERI-1482)
+    ERROR: GUI-0064: Error occurs while reloading design hierarchy:
+	C:/Users/23269/Desktop/QTestDemo/AllTestDemo0619/sources/AllTestDemo0619.v(17): ERROR: syntax error near 'inout' (VERI-1137)
+	C:/Users/23269/Desktop/QTestDemo/AllTestDemo0619/sources/AllTestDemo0619.v(17): ERROR: Verilog 2000 keyword 'inout' used in incorrect context (VERI-2344)
+    ERROR: GUI-0065: Command "load_design -stage_elaborate -no_hier" has error:.
+  >>load_design -stage_elaborate -no_hier
+  -- Analyzing Verilog file 'C:/Users/23269/Desktop/QTestDemo/AllTestDemo0619/sources/AllTestDemo0619.v' (VERI-1482)
+  C:/Users/23269/Desktop/QTestDemo/AllTestDemo0619/sources/AllTestDemo0619.v(57): WARNING: data object 'cnt' is already declared (VERI-2170)
+  C:/Users/23269/Desktop/QTestDemo/AllTestDemo0619/sources/AllTestDemo0619.v(20): INFO: previous declaration of 'cnt' is from here (VERI-1967)
+  C:/Users/23269/Desktop/QTestDemo/AllTestDemo0619/sources/AllTestDemo0619.v(57): WARNING: second declaration of 'cnt' is ignored (VERI-1329)
+  C:/Users/23269/Desktop/QTestDemo/AllTestDemo0619/sources/AllTestDemo0619.v(181): INFO: undeclared symbol 'clk_50M', assumed default net type 'wire' (VERI-2561)
+    ERROR: GUI-0064: Error occurs while reloading design hierarchy:
+	C:/Users/23269/Desktop/QTestDemo/AllTestDemo0619/sources/AllTestDemo0619.v(28): ERROR: concurrent assignment to a non-net 'lcd_data' is not permitted (VERI-1195)
+	C:/Users/23269/Desktop/QTestDemo/AllTestDemo0619/sources/AllTestDemo0619.v(1): ERROR: module 'AllTestDemo0619' is ignored due to previous errors (VERI-1072)
+    ERROR: GUI-0065: Command "load_design -stage_elaborate -no_hier" has error:.
+  >>load_design -stage_elaborate -no_hier
+  load ip C:/Users/23269/Desktop/QTestDemo/AllTestDemo0619/ip/clk_wiz_0/clk_wiz_0.fmi
+  -- Analyzing Verilog file 'C:/Users/23269/Desktop/QTestDemo/AllTestDemo0619/ip/clk_wiz_0/clk_wiz_0.v' (VERI-1482)
+  -- Analyzing Verilog file 'C:/Users/23269/Desktop/QTestDemo/AllTestDemo0619/sources/AllTestDemo0619.v' (VERI-1482)
+  C:/Users/23269/Desktop/QTestDemo/AllTestDemo0619/sources/AllTestDemo0619.v(167): INFO: undeclared symbol 'clk_50M', assumed default net type 'wire' (VERI-2561)
+  load_design elapsed_time 1.02 seconds, cpu_time 1.03 seconds
+  load_design used memory 3MB, procise used peak memory 704MB, current used memory 694MB
+>>load_design -stage_elaborate -no_hier
+  -- Analyzing Verilog file 'C:/Users/23269/Desktop/QTestDemo/AllTestDemo0619/sources/AllTestDemo0619.v' (VERI-1482)
+    ERROR: GUI-0064: Error occurs while reloading design hierarchy:
+	C:/Users/23269/Desktop/QTestDemo/AllTestDemo0619/sources/AllTestDemo0619.v(12): ERROR: syntax error near 'input' (VERI-1137)
+	C:/Users/23269/Desktop/QTestDemo/AllTestDemo0619/sources/AllTestDemo0619.v(12): ERROR: Verilog 2000 keyword 'input' used in incorrect context (VERI-2344)
+    ERROR: GUI-0065: Command "load_design -stage_elaborate -no_hier" has error:.
+  >>load_design -stage_elaborate -no_hier
+  load ip C:/Users/23269/Desktop/QTestDemo/AllTestDemo0619/ip/clk_wiz_0/clk_wiz_0.fmi
+  -- Analyzing Verilog file 'C:/Users/23269/Desktop/QTestDemo/AllTestDemo0619/ip/clk_wiz_0/clk_wiz_0.v' (VERI-1482)
+  -- Analyzing Verilog file 'C:/Users/23269/Desktop/QTestDemo/AllTestDemo0619/sources/AllTestDemo0619.v' (VERI-1482)
+  C:/Users/23269/Desktop/QTestDemo/AllTestDemo0619/sources/AllTestDemo0619.v(171): INFO: undeclared symbol 'clk_50M', assumed default net type 'wire' (VERI-2561)
+  load_design elapsed_time 1.01 seconds, cpu_time 1.00 seconds
+  load_design used memory 0MB, procise used peak memory 704MB, current used memory 701MB
+>>load_design -stage_elaborate -no_hier
+  load ip C:/Users/23269/Desktop/QTestDemo/AllTestDemo0619/ip/clk_wiz_0/clk_wiz_0.fmi
+  -- Analyzing Verilog file 'C:/Users/23269/Desktop/QTestDemo/AllTestDemo0619/ip/clk_wiz_0/clk_wiz_0.v' (VERI-1482)
+  -- Analyzing Verilog file 'C:/Users/23269/Desktop/QTestDemo/AllTestDemo0619/sources/AllTestDemo0619.v' (VERI-1482)
+  C:/Users/23269/Desktop/QTestDemo/AllTestDemo0619/sources/AllTestDemo0619.v(171): INFO: undeclared symbol 'clk_50M', assumed default net type 'wire' (VERI-2561)
+  load_design elapsed_time 1.01 seconds, cpu_time 1.00 seconds
+  load_design used memory 0MB, procise used peak memory 704MB, current used memory 698MB
+>>load_design -stage_elaborate -no_hier
+  -- Analyzing Verilog file 'C:/Users/23269/Desktop/QTestDemo/AllTestDemo0619/sources/AllTestDemo0619.v' (VERI-1482)
+  C:/Users/23269/Desktop/QTestDemo/AllTestDemo0619/sources/AllTestDemo0619.v(33): INFO: previous declaration of 'IDLE' is from here (VERI-1967)
+  C:/Users/23269/Desktop/QTestDemo/AllTestDemo0619/sources/AllTestDemo0619.v(71): WARNING: data object 'cnt' is already declared (VERI-2170)
+  C:/Users/23269/Desktop/QTestDemo/AllTestDemo0619/sources/AllTestDemo0619.v(20): INFO: previous declaration of 'cnt' is from here (VERI-1967)
+  C:/Users/23269/Desktop/QTestDemo/AllTestDemo0619/sources/AllTestDemo0619.v(71): WARNING: second declaration of 'cnt' is ignored (VERI-1329)
+  C:/Users/23269/Desktop/QTestDemo/AllTestDemo0619/sources/AllTestDemo0619.v(195): INFO: undeclared symbol 'clk_50M', assumed default net type 'wire' (VERI-2561)
+    ERROR: GUI-0064: Error occurs while reloading design hierarchy:
+	C:/Users/23269/Desktop/QTestDemo/AllTestDemo0619/sources/AllTestDemo0619.v(46): ERROR: 'IDLE' is already declared (VERI-1116)
+	C:/Users/23269/Desktop/QTestDemo/AllTestDemo0619/sources/AllTestDemo0619.v(28): ERROR: concurrent assignment to a non-net 'lcd_data' is not permitted (VERI-1195)
+	C:/Users/23269/Desktop/QTestDemo/AllTestDemo0619/sources/AllTestDemo0619.v(1): ERROR: module 'AllTestDemo0619' is ignored due to previous errors (VERI-1072)
+    ERROR: GUI-0065: Command "load_design -stage_elaborate -no_hier" has error:.
+  >>load_design -stage_elaborate -no_hier
+  -- Analyzing Verilog file 'C:/Users/23269/Desktop/QTestDemo/AllTestDemo0619/sources/AllTestDemo0619.v' (VERI-1482)
+  C:/Users/23269/Desktop/QTestDemo/AllTestDemo0619/sources/AllTestDemo0619.v(33): INFO: previous declaration of 'IDLE' is from here (VERI-1967)
+  C:/Users/23269/Desktop/QTestDemo/AllTestDemo0619/sources/AllTestDemo0619.v(71): WARNING: data object 'cnt' is already declared (VERI-2170)
+  C:/Users/23269/Desktop/QTestDemo/AllTestDemo0619/sources/AllTestDemo0619.v(20): INFO: previous declaration of 'cnt' is from here (VERI-1967)
+  C:/Users/23269/Desktop/QTestDemo/AllTestDemo0619/sources/AllTestDemo0619.v(71): WARNING: second declaration of 'cnt' is ignored (VERI-1329)
+  C:/Users/23269/Desktop/QTestDemo/AllTestDemo0619/sources/AllTestDemo0619.v(96): WARNING: literal value 'd150_000 truncated to fit in 17 bits (VERI-1208)
+  C:/Users/23269/Desktop/QTestDemo/AllTestDemo0619/sources/AllTestDemo0619.v(236): INFO: undeclared symbol 'clk_50M', assumed default net type 'wire' (VERI-2561)
+    ERROR: GUI-0064: Error occurs while reloading design hierarchy:
+	C:/Users/23269/Desktop/QTestDemo/AllTestDemo0619/sources/AllTestDemo0619.v(46): ERROR: 'IDLE' is already declared (VERI-1116)
+	C:/Users/23269/Desktop/QTestDemo/AllTestDemo0619/sources/AllTestDemo0619.v(28): ERROR: concurrent assignment to a non-net 'lcd_data' is not permitted (VERI-1195)
+	C:/Users/23269/Desktop/QTestDemo/AllTestDemo0619/sources/AllTestDemo0619.v(1): ERROR: module 'AllTestDemo0619' is ignored due to previous errors (VERI-1072)
+    ERROR: GUI-0065: Command "load_design -stage_elaborate -no_hier" has error:.
+  >>load_design -stage_elaborate -no_hier
+  -- Analyzing Verilog file 'C:/Users/23269/Desktop/QTestDemo/AllTestDemo0619/sources/AllTestDemo0619.v' (VERI-1482)
+  C:/Users/23269/Desktop/QTestDemo/AllTestDemo0619/sources/AllTestDemo0619.v(33): INFO: previous declaration of 'IDLE' is from here (VERI-1967)
+  C:/Users/23269/Desktop/QTestDemo/AllTestDemo0619/sources/AllTestDemo0619.v(71): WARNING: data object 'cnt' is already declared (VERI-2170)
+  C:/Users/23269/Desktop/QTestDemo/AllTestDemo0619/sources/AllTestDemo0619.v(20): INFO: previous declaration of 'cnt' is from here (VERI-1967)
+  C:/Users/23269/Desktop/QTestDemo/AllTestDemo0619/sources/AllTestDemo0619.v(71): WARNING: second declaration of 'cnt' is ignored (VERI-1329)
+  C:/Users/23269/Desktop/QTestDemo/AllTestDemo0619/sources/AllTestDemo0619.v(96): WARNING: literal value 'd150_000 truncated to fit in 17 bits (VERI-1208)
+  C:/Users/23269/Desktop/QTestDemo/AllTestDemo0619/sources/AllTestDemo0619.v(236): INFO: undeclared symbol 'clk_50M', assumed default net type 'wire' (VERI-2561)
+    ERROR: GUI-0064: Error occurs while reloading design hierarchy:
+	C:/Users/23269/Desktop/QTestDemo/AllTestDemo0619/sources/AllTestDemo0619.v(46): ERROR: 'IDLE' is already declared (VERI-1116)
+	C:/Users/23269/Desktop/QTestDemo/AllTestDemo0619/sources/AllTestDemo0619.v(1): ERROR: module 'AllTestDemo0619' is ignored due to previous errors (VERI-1072)
+    ERROR: GUI-0065: Command "load_design -stage_elaborate -no_hier" has error:.
+  >>load_design -stage_elaborate -no_hier
+  load ip C:/Users/23269/Desktop/QTestDemo/AllTestDemo0619/ip/clk_wiz_0/clk_wiz_0.fmi
+  -- Analyzing Verilog file 'C:/Users/23269/Desktop/QTestDemo/AllTestDemo0619/ip/clk_wiz_0/clk_wiz_0.v' (VERI-1482)
+  -- Analyzing Verilog file 'C:/Users/23269/Desktop/QTestDemo/AllTestDemo0619/sources/AllTestDemo0619.v' (VERI-1482)
+  C:/Users/23269/Desktop/QTestDemo/AllTestDemo0619/sources/AllTestDemo0619.v(167): INFO: undeclared symbol 'clk_50M', assumed default net type 'wire' (VERI-2561)
+  load_design elapsed_time 1.01 seconds, cpu_time 1.02 seconds
+  load_design used memory 168MB, procise used peak memory 708MB, current used memory 536MB
+>>rtl_analyze
+  rtl_analyze -> elaborate
+  WARN(ELAB-W-109): C:/Users/23269/Desktop/QTestDemo/AllTestDemo0619/ip/clk_wiz_0/clk_wiz_0.v(7), empty port "clk_in1" on module "clk_wiz_0" declaration.  
+  Info: SDB transformed into DM successfully.  
+  C:/Users/23269/Desktop/QTestDemo/AllTestDemo0619/sources/AllTestDemo0619.v(1): INFO: compiling module 'AllTestDemo0619_default' (VERI-1018)
+  write out edif file AllTestDemo0619_elaborate.edif
+  rtl_analyze -> read edif source files
+  rtl_analyze -> read ip edif files
+  read_edif C:/Users/23269/Desktop/QTestDemo/AllTestDemo0619/ip/clk_wiz_0/clk_wiz_0.edif
+  rtl_analyze -> bind_design -verbose 0
+  rtl_analyze -> uniquify
+  rtl_analyze -> read_fdc C:/Users/23269/Desktop/QTestDemo/AllTestDemo0619/constraints/constrs_1/AllTestDemo0619.fdc
+  rtl_analyze elapsed_time 0.08 seconds, cpu_time 0.11 seconds
+  rtl_analyze used memory 13MB, procise used peak memory 708MB, current used memory 499MB
+>>synthesize
+  synthesize -> flatten
+  synthesize -> logic opt and lut mapping
+  synthesize -> insert_io -bufg_limit_cnt 16
+  write out edif file AllTestDemo0619.edif
+  FDC_INFO! export constraints to file AllTestDemo0619_synthesized.fdc!
+  "C:/Users/23269/Desktop/QTestDemo/AllTestDemo0619/rundir/AllTestDemo0619_synthesized.fdc" is already in project.
+  synthesize elapsed_time 0.14 seconds, cpu_time 0.14 seconds
+  synthesize used memory 27MB, procise used peak memory 708MB, current used memory 502MB
+place -thread 4 ;write_phy_design {C:/Users/23269/Desktop/QTestDemo/AllTestDemo0619/rundir//.25bed46ee5ec793ce98bb4282066ff45_place.phy} 
+>>opt_design
+    DffDupPass : total create 0 insts for model 'AllTestDemo0619'
+    HfsPass : total split 0 nets for model 'AllTestDemo0619'
+    DffDupPass : total create 0 insts for model 'AllTestDemo0619'
+  opt_design used memory 0MB, procise used peak memory 708MB, current used memory 496MB
+>>place -thread 4
+  Phase 1 Placer Initialization
+  Phase 1.1 Placer Initialization Core
+  Phase 1.1.6 Build Placer Netlist Model
+  Building SiteChkr ...
+    Done.
+  Phase 1.1.6 Build Placer Netlist Model | Time: 0.264s
+  Phase 1.1.5.2 Implementation Feasibility check
+  IO Utilization:
+    Number of bonded IOBs:                         43 out of     250   17%
+  
+  IOPAD Utilization:
+    Number of bonded IOPADs:                        0 out of      22    0%
+  
+  Specific Feature Utilization:
+    Number of RAMH18E1/FIFO18E1s:                   0 out of     150    0%
+    Number of RAMHFIFO36E1/FIFO36E1s:               0 out of      75    0%
+    Number of GCDU/GCDU_CTRLs:                      2 out of      32    6%
+      Number used as GCDUs:                         0
+      Number used as GCDU_CTRLs:                    2
+    Number of ISTCE2/ISTCE2_FINESTCs:               0 out of     250    0%
+    Number of ILGKE2/ILGKE3/ISSE2s:                 0 out of     250    0%
+    Number of OLGKE2/OLGKE3/OSSE2s:                 0 out of     250    0%
+    Number of PSU_IN/PSU_IN_PHYs:                   0 out of      20    0%
+    Number of PSU_OUT/PSU_OUT_PHYs:                 0 out of      20    0%
+    Number of JTBSs:                                0 out of       4    0%
+    Number of HCDU_CEs:                             0 out of      72    0%
+    Number of RCDUs:                                0 out of      20    0%
+    Number of CAPs:                                 0 out of       1    0%
+    Number of DNA_PORTs:                            0 out of       1    0%
+    Number of CU48E1s:                              0 out of     120    0%
+    Number of UNRECOVER_USRs:                       0 out of       1    0%
+    Number of SECTOR_ECCs:                          0 out of       1    0%
+    Number of UHST2E2_CHs:                          0 out of       4    0%
+    Number of UHST2E2_COMs:                         0 out of       1    0%
+    Number of IDU_DS_UHSTE2s:                       0 out of       2    0%
+    Number of UACs:                                 0 out of       2    0%
+    Number of ISTC_CTRLs:                           0 out of       5    0%
+    Number of IFIFOs:                               0 out of      20    0%
+    Number of DCCUE2_ADVs:                          1 out of       5   20%
+    Number of OFIFOs:                               0 out of      20    0%
+    Number of PCIE_2_1s:                            0 out of       1    0%
+    Number of PSU_REFs:                             0 out of       5    0%
+    Number of PHY_CTRLs:                            0 out of       5    0%
+    Number of PLLE2_ADVs:                           0 out of       5    0%
+    Number of BOOTUPs:                              0 out of       1    0%
+    Number of FADCs:                                0 out of       1    0%
+  
+  Phase 1.1.5.2 Implementation Feasibility check | Time: 0.267s
+  Phase 1.1.7 Constrain Clocks/Macros
+  Phase 1.1.7 Constrain Clocks/Macros | Time: 0.271s
+  Phase 1.1.5 IO Placement/ Clock Placement/ Build Placer Device
+    WARNING: PLACE-1501: IO port lcd_data[0] use I/O standard(IOSTANDARD) value "DEFAULT", instead of a user assigned specific value.
+    WARNING: PLACE-1501: IO port lcd_data[1] use I/O standard(IOSTANDARD) value "DEFAULT", instead of a user assigned specific value.
+    WARNING: PLACE-1501: IO port lcd_data[2] use I/O standard(IOSTANDARD) value "DEFAULT", instead of a user assigned specific value.
+    WARNING: PLACE-1501: IO port lcd_data[3] use I/O standard(IOSTANDARD) value "DEFAULT", instead of a user assigned specific value.
+    WARNING: PLACE-1501: IO port lcd_data[4] use I/O standard(IOSTANDARD) value "DEFAULT", instead of a user assigned specific value.
+    WARNING: PLACE-1501: IO port lcd_data[5] use I/O standard(IOSTANDARD) value "DEFAULT", instead of a user assigned specific value.
+    WARNING: PLACE-1501: IO port lcd_data[6] use I/O standard(IOSTANDARD) value "DEFAULT", instead of a user assigned specific value.
+    WARNING: PLACE-1501: IO port lcd_data[7] use I/O standard(IOSTANDARD) value "DEFAULT", instead of a user assigned specific value.
+  IO Placement: total number IdelayCtrl banks: 0
+  IO placement: total number of IO banks: 3
+  Phase 1.1.5 IO Placement/ Clock Placement/ Build Placer Device | Time: 0.284s
+  Phase 1.1.8 Build Shapes/ HD Config
+  Phase 1.1.8.1 Build Macros
+  Phase 1.1.8.1 Build Macros | Time: 0.284s
+  Phase 1.1.8 Build Shapes/ HD Config | Time: 0.284s
+  Phase 1.1.5 IO Placement/ Clock Placement/ Build Placer Device | Time: 0.284s
+  Phase 1.1 Placer Initialization Core | Time: 1.218s
+  Phase 1 Placer Initialization | Time: 1.218s
+  Phase 2 Global Placement
+  Phase 2.1 Distribute Placement
+  cluster_view_->num_total_clusters() = 112
+  .  
+  .  .  .  .  .  .  
+  .  
+  Phase 2.1 Distribute Placement | Time: 1.529s
+  hpwl = 845.7
+  Phase 2.2 Legalize Placement
+  Phase 2.2 Legalize Placement | Time: 1.54s
+  hpwl = 867.5
+  Phase 2 Global Placement | Time: 1.541s
+  The worst negtive slack is: 0.000000.
+  The total negtive slack is: 0.000000.
+  Generating physical netlist ... 
+  
+                           DEVICE UTILIZATION                   
+  ------------------------------------------------------------------
+  resource                      used/available     utilization      
+  ------------------------------------------------------------------
+  DCCUE2_ADV                        1/5             20.00%
+  GCDU_CTRL                         2/32             6.25%
+  IOU33                             1/10            10.00%
+  IOU33M                           21/120           17.50%
+  IOU33S                           21/120           17.50%
+  LC                               29/8150           0.36%
+  ------------------------------------------------------------------
+  FDC_INFO! export constraints to file AllTestDemo0619_placed.fdc!
+  "C:/Users/23269/Desktop/QTestDemo/AllTestDemo0619/rundir/AllTestDemo0619_placed.fdc" is already in project.
+  Phase 3 Detail Placement
+  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  
+  Phase 3 Detail Placement | Time: 2.557s
+  Phase 4 Post Placement Optimization and Clean-Up
+  Phase 4.2 Post Placement Cleanup
+  Phase 4.2 Post Placement Cleanup | Time: 2.558s
+  Phase 4.4 Final Placement Cleanup
+  Phase 4.4 Final Placement Cleanup | Time: 2.558s
+  Phase 4 Post Placement Optimization and Clean-Up | Time: 2.558s
+  place elapsed_time 2.57 seconds, cpu_time 3.86 seconds
+  place used memory 150MB, procise used peak memory 708MB, current used memory 565MB
+>>write_phy_design C:/Users/23269/Desktop/QTestDemo/AllTestDemo0619/rundir//.25bed46ee5ec793ce98bb4282066ff45_place.phy
+  write_phy_design used memory 81MB, procise used peak memory 708MB, current used memory 560MB
+route ;write_phy_design {C:/Users/23269/Desktop/QTestDemo/AllTestDemo0619/rundir//.25bed46ee5ec793ce98bb4282066ff45_route.phy} 
+>>route
+  DataModel: remove 1 TIE HIGH nets.
+  DataModel: create 11 dummy TIE HIGH nets.
+  DataModel: remove 1 TIE LOW nets.
+  DataModel: created 14 dummy TIE LOW nets.
+  DataModel: remove 24 PULL insts.
+  DataModel: remove 0 CU PULL insts.
+  DataModel: created 0 dummy LC insts.
+  Router: build routing data...
+  Router: 178 nets, 99 insts.
+  Router: sort net pins...
+  Router: initial routability-driven routing...
+  Router: No unrouted net
+  Router: 90 routing nodes have overflow, Time : 0.17 s
+  Router: 36 routing nodes have overflow, Time : 0.02 s
+  Router: 8 routing nodes have overflow, Time : 0.02 s
+  Router: 0 routing nodes have overflow, Time : 0.00 s
+  Router: routability driven finished elapsed_time 0.27 seconds, cpu_time 0.27 seconds
+  Router: pre-processing for timing-driven reroute...
+  Router: no valid timing constraint.
+  Router: successfully routed after 4 iterations.
+  Router: SIGNAL wirelength : 834.
+  Router: CLOCK wirelength  : 333.
+  Router: P/G wirelength    : 1.
+  Router: created 43 dummy I/O insts.
+  Router: created 3 dummy HCDU_CE insts.
+  route elapsed_time 1.07 seconds, cpu_time 1.06 seconds
+  route used memory 301MB, procise used peak memory 861MB, current used memory 684MB
+>>write_phy_design C:/Users/23269/Desktop/QTestDemo/AllTestDemo0619/rundir//.25bed46ee5ec793ce98bb4282066ff45_route.phy
+  write_phy_design used memory 0MB, procise used peak memory 861MB, current used memory 656MB
+>>bitgen AllTestDemo0619.bit -g bpi_sync_mode:Disable spi_32bit_addr:No spi_buswidth:1 Encrypt:No
+  preprocess elapsed_time 0.02 seconds, cpu_time 16.00 seconds
+  assemble bitstream elapsed_time 0.05 seconds, cpu_time -16.00 seconds
+  Writing out bitstream file AllTestDemo0619.bit
+  Writing out bgn file AllTestDemo0619.bgn
+  bitgen elapsed_time 0.80 seconds, cpu_time 0.94 seconds
+  bitgen used memory 316MB, procise used peak memory 971MB, current used memory 671MB
+>>write_phy_design C:/Users/23269/Desktop/QTestDemo/AllTestDemo0619/rundir//.25bed46ee5ec793ce98bb4282066ff45.phy
+  write_phy_design used memory 1MB, procise used peak memory 971MB, current used memory 661MB
+>>init_chain -cable_type usb-jtag-smt2
+  procise_jtag version: 29535
+  hw_server:  Set FTDI speed to 15000khz successfully
+  hw_server:  FTDI speed is already 15000khz
+  hw_server:  JTAG tap: Procise found HwServer chain_info: 0x0222c143 (mfg:0x0a1(FMSH), part:0x222c(fmk50), ver:0x0)
+  ----------------------------------------------------------------------
+  device_id:    00000010001000101100000101000011
+  manufacturer: FMSH
+  part_name:    fmk50
+  part_id:      0
+  ir_length:    6
+  version:      0
+  step_id:      0
+  hw_server:  SVF instructions execute success
+  hw_server:  SVF instructions execute success
+  init_chain elapsed_time 4.11 seconds, cpu_time 0.17 seconds
+  init_chain used memory 0MB, procise used peak memory 971MB, current used memory 668MB
+>>program_bit C:/Users/23269/Desktop/QTestDemo/AllTestDemo0619/rundir/AllTestDemo0619.bit -part 0
+  hw_server:  Accepting 'procise' connection 1416 on tcp 8888
+  BOOTSTS: 0x00000001
+  STAT: 0x400079fc
+  Startup state machine: Phase 5
+  hw_server:  SVF instructions execute success
+  program_bit elapsed_time 2.76 seconds, cpu_time 0.08 seconds
+  program_bit used memory 4MB, procise used peak memory 971MB, current used memory 673MB
+hw_server message connection interrupt, errno code = 0
+>>init_chain -cable_type usb-jtag-smt2
+  procise_jtag version: 29535
+  hw_server:  Set FTDI speed to 15000khz successfully
+  hw_server:  FTDI speed is already 15000khz
+  hw_server:  JTAG tap: Procise found HwServer chain_info: 0x0222c143 (mfg:0x0a1(FMSH), part:0x222c(fmk50), ver:0x0)
+  ----------------------------------------------------------------------
+  device_id:    00000010001000101100000101000011
+  manufacturer: FMSH
+  part_name:    fmk50
+  part_id:      0
+  ir_length:    6
+  version:      0
+  step_id:      0
+  hw_server:  SVF instructions execute success
+  hw_server:  SVF instructions execute success
+  init_chain elapsed_time 4.05 seconds, cpu_time 0.23 seconds
+  init_chain used memory 1MB, procise used peak memory 971MB, current used memory 199MB
+>>program_bit C:/Users/23269/Desktop/QTestDemo/AllTestDemo0619/rundir/AllTestDemo0619.bit -part 0
+  hw_server:  Accepting 'procise' connection 1440 on tcp 8888
+  BOOTSTS: 0x00000001
+  STAT: 0x400079fc
+  Startup state machine: Phase 5
+  hw_server:  SVF instructions execute success
+  program_bit elapsed_time 2.79 seconds, cpu_time 0.09 seconds
+  program_bit used memory 4MB, procise used peak memory 971MB, current used memory 208MB
+hw_server message connection interrupt, errno code = 0

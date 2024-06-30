@@ -1,0 +1,43 @@
+Procise 2023.2
+SVN Version : 29712
+Build  time : 2024/01/23 11:45:29
+Start  time : 2024-06-20 13:44:13
+>>set_device fmk50t4
+  set_device elapsed_time 2.06 seconds, cpu_time 2.13 seconds
+  set_device used memory 547MB, procise used peak memory 638MB, current used memory 492MB
+>>load_design -stage_post_map -no_hier
+  -- Analyzing Verilog file 'C:/Users/23269/Desktop/QTestDemo/AllTestDemo0619/sources/AllTestDemo0619.v' (VERI-1482)
+  C:/Users/23269/Desktop/QTestDemo/AllTestDemo0619/sources/AllTestDemo0619.v(167): INFO: undeclared symbol 'clk_50M', assumed default net type 'wire' (VERI-2561)
+  read_phy_design C:/Users/23269/Desktop/QTestDemo/AllTestDemo0619/rundir/.25bed46ee5ec793ce98bb4282066ff45.phy
+  Read FDC C:/Users/23269/Desktop/QTestDemo/AllTestDemo0619/rundir/AllTestDemo0619_placed.fdc
+  load_design elapsed_time 1.08 seconds, cpu_time 1.13 seconds
+  load_design used memory 16MB, procise used peak memory 638MB, current used memory 580MB
+>>init_chain -cable_type usb-jtag-smt2
+  procise_jtag version: 29535
+  hw_server:  Set FTDI speed to 15000khz successfully
+  hw_server:  FTDI speed is already 15000khz
+  hw_server:  JTAG tap: Procise found HwServer chain_info: 0x0222c143 (mfg:0x0a1(FMSH), part:0x222c(fmk50), ver:0x0)
+  ----------------------------------------------------------------------
+  device_id:    00000010001000101100000101000011
+  manufacturer: FMSH
+  part_name:    fmk50
+  part_id:      0
+  ir_length:    6
+  version:      0
+  step_id:      0
+  hw_server:  SVF instructions execute success
+  hw_server:  SVF instructions execute success
+  init_chain elapsed_time 4.08 seconds, cpu_time 0.06 seconds
+  init_chain used memory 0MB, procise used peak memory 688MB, current used memory 687MB
+>>program_bit C:/Users/23269/Desktop/QTestDemo/AllTestDemo0619/rundir/AllTestDemo0619.bit -part 0
+  hw_server:  Accepting 'procise' connection 1236 on tcp 8888
+  BOOTSTS: 0x00000001
+  STAT: 0x400079fc
+  Startup state machine: Phase 5
+  hw_server:  SVF instructions execute success
+  program_bit elapsed_time 2.89 seconds, cpu_time 0.08 seconds
+  program_bit used memory 5MB, procise used peak memory 693MB, current used memory 693MB
+hw_server message connection interrupt, errno code = 0
+>>write_phy_design C:/Users/23269/Desktop/QTestDemo/AllTestDemo0619/rundir//.25bed46ee5ec793ce98bb4282066ff45.phy
+  write_phy_design elapsed_time 0.02 seconds, cpu_time 0.02 seconds
+  write_phy_design used memory 2MB, procise used peak memory 693MB, current used memory 166MB

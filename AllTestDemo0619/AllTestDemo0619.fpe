@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Project Version="1.03" Minor="0" Name="AllTestDemo0619" Create="Procise 2023.2 29712 at 2024-06-19 17:16:50" Update="Procise 2023.2 29712 at 2024-06-20 15:25:09" SupportSvn="29363">
+    <Configuration>
+        <Option Name="Stage" Value="Post-Bitgen"/>
+        <Option Name="Description" Value=""/>
+        <Option Name="Family" Value="fmk"/>
+        <Option Name="Device" Value="fmk50t4"/>
+        <Option Name="Package" Value="fcfbga484"/>
+        <Option Name="Speed" Value="-2"/>
+    </Configuration>
+    <FileSets Version="1" Minor="0">
+        <FileSet Name="sources_1" Type="DesignSrcs" RelSrcDir="sources">
+            <File Path="rundir/.25bed46ee5ec793ce98bb4282066ff45.phy">
+                <FileInfo Type="PHY"/>
+            </File>
+            <File Path="rundir/AllTestDemo0619_elaborate.edif">
+                <FileInfo Type="EDIF_ELABORATE"/>
+            </File>
+            <File Path="rundir/AllTestDemo0619.edif">
+                <FileInfo Type="EDIF_SYN"/>
+            </File>
+            <File Path="sources/AllTestDemo0619.v">
+                <FileInfo Type="Verilog" Library="work"/>
+            </File>
+            <Config>
+                <Option Name="TopModule" Value="AllTestDemo0619"/>
+                <Option Name="TopInstPath" Value="AllTestDemo0619"/>
+                <Option Name="TopRTLFile" Value="C:/Users/23269/Desktop/QTestDemo/AllTestDemo0619/sources/AllTestDemo0619.v"/>
+            </Config>
+        </FileSet>
+        <FileSet Name="constrs_1" Type="Constrs" RelSrcDir="constraints/constrs_1">
+            <File Path="constraints/constrs_1/AllTestDemo0619.fdc">
+                <FileInfo Type="Constraint"/>
+            </File>
+            <File Path="rundir/AllTestDemo0619_synthesized.fdc">
+                <FileInfo Type="kFDC_PLACED"/>
+            </File>
+            <File Path="rundir/AllTestDemo0619_placed.fdc">
+                <FileInfo Type="kFDC_PLACED"/>
+            </File>
+            <Config>
+                <Option Name="ActiveConstraint" Value=""/>
+            </Config>
+        </FileSet>
+        <FileSet Name="sources_1" Type="IpSrcs" RelSrcDir="sources_1/ip">
+            <File Path="ip/clk_wiz_0/clk_wiz_0.fmi">
+                <FileInfo Type="XCI"/>
+            </File>
+        </FileSet>
+    </FileSets>
+    <DesignHierarchy>
+        <Module Name="AllTestDemo0619" File="AllTestDemo0619.v" LineNum="1">
+            <Instance Name="clk1" Module="clk_wiz_0" File="clk_wiz_0.fmi" LineNum="0"/>
+        </Module>
+        <Automatic_includes/>
+    </DesignHierarchy>
+    <BspRepositories BspCover="false">
+        <Local folder="D:/Procise/data/devicetree_rep"/>
+    </BspRepositories>
+</Project>
