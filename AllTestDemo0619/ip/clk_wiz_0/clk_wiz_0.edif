@@ -1,0 +1,302 @@
+(edif clk_wiz_0
+  (edifVersion 2 0 0)
+  (edifLevel 0)
+  (keywordMap (keywordLevel 0))
+  (external UNISIMS
+    (edifLevel 0)
+    (technology (numberDefinition))
+    (cell GND
+      (cellType GENERIC)
+      (view model0
+        (viewType NETLIST)
+        (interface
+          (port G
+            (direction OUTPUT))
+        )
+      )
+    )
+    (cell BUFIN
+      (cellType GENERIC)
+      (view model0
+        (viewType NETLIST)
+        (interface
+          (port O
+            (direction OUTPUT))
+          (port I
+            (direction INPUT))
+        )
+      )
+    )
+    (cell PLL_MM_FULL
+      (cellType GENERIC)
+      (view model0
+        (viewType NETLIST)
+        (interface
+          (port CLKFBOUT
+            (direction OUTPUT))
+          (port CLKFBOUTB
+            (direction OUTPUT))
+          (port CLKFBSTOPPED
+            (direction OUTPUT))
+          (port CLKINSTOP
+            (direction OUTPUT))
+          (port CLKOUT0
+            (direction OUTPUT))
+          (port CLKOUT0B
+            (direction OUTPUT))
+          (port CLKOUT1
+            (direction OUTPUT))
+          (port CLKOUT1B
+            (direction OUTPUT))
+          (port CLKOUT2
+            (direction OUTPUT))
+          (port CLKOUT2B
+            (direction OUTPUT))
+          (port CLKOUT3
+            (direction OUTPUT))
+          (port CLKOUT3B
+            (direction OUTPUT))
+          (port CLKOUT4
+            (direction OUTPUT))
+          (port CLKOUT5
+            (direction OUTPUT))
+          (port CLKOUT6
+            (direction OUTPUT))
+          (port (array (rename DOUT "DOUT[15:0]") 16)
+            (direction OUTPUT))
+          (port DRPRDY
+            (direction OUTPUT))
+          (port LOCKED
+            (direction OUTPUT))
+          (port PSDONE
+            (direction OUTPUT))
+          (port CLKFBIN
+            (direction INPUT))
+          (port CLKIN0
+            (direction INPUT))
+          (port CLKIN1
+            (direction INPUT))
+          (port CLKINSEL
+            (direction INPUT))
+          (port (array (rename DRPADDR "DRPADDR[6:0]") 7)
+            (direction INPUT))
+          (port DRPCLK
+            (direction INPUT))
+          (port DRPEN
+            (direction INPUT))
+          (port (array (rename DIN "DIN[15:0]") 16)
+            (direction INPUT))
+          (port DRPWE
+            (direction INPUT))
+          (port PSCLK
+            (direction INPUT))
+          (port PSEN
+            (direction INPUT))
+          (port PSINCDEC
+            (direction INPUT))
+          (port PWRDWN
+            (direction INPUT))
+          (port RST
+            (direction INPUT))
+        )
+      )
+    )
+    (cell GLCLK
+      (cellType GENERIC)
+      (view model0
+        (viewType NETLIST)
+        (interface
+          (port CLKOUT
+            (direction OUTPUT))
+          (port CLKIN
+            (direction INPUT))
+        )
+      )
+    )
+    (cell VCC
+      (cellType GENERIC)
+      (view model0
+        (viewType NETLIST)
+        (interface
+          (port P
+            (direction OUTPUT))
+        )
+      )
+    )
+  )
+  (library clk_wiz_0_lib
+    (edifLevel 0)
+    (technology (numberDefinition))
+    (cell clk_wiz_0_clk_wiz
+      (cellType GENERIC)
+      (view clk_wiz_0_clk_wiz
+        (viewType NETLIST)
+        (interface
+          (port clk_out1
+            (direction OUTPUT))
+          (port clk_in1
+            (direction INPUT))
+        )
+        (contents
+          (instance (rename GND "GND")
+            (viewRef model0 (cellRef GND (libraryRef UNISIMS)))
+          )
+          (instance clkin1_ibufg
+            (viewRef model0 (cellRef BUFIN (libraryRef UNISIMS)))
+            (property PRESERVE (boolean (true)) (owner "FMSH"))
+            (property PROCISE_LINE_NUM (integer 26) (owner "FMSH"))
+            (property PROCISE_FILE_NAME (string "clk_wiz_0_clk_wiz.v") (owner "FMSH"))
+          )
+          (instance pll_mm_full_inst
+            (viewRef model0 (cellRef PLL_MM_FULL (libraryRef UNISIMS)))
+            (property BANDWIDTH (string "OPTIMIZED") (owner "FMSH"))
+            (property CLKFBOUT_FINE_PS_EN (boolean (false)) (owner "FMSH"))
+            (property CLKFBOUT_MULT_F (number (e 10 0)) (owner "FMSH"))
+            (property CLKFBOUT_PHASE (number (e 0 0)) (owner "FMSH"))
+            (property CLKIN0_PERIOD (number (e 10 0)) (owner "FMSH"))
+            (property CLKOUT0_DIVIDE_F (number (e 20 0)) (owner "FMSH"))
+            (property CLKOUT0_DUTYCYCLE (number (e 5 -1)) (owner "FMSH"))
+            (property CLKOUT0_FINE_PS_EN (boolean (false)) (owner "FMSH"))
+            (property CLKOUT0_PHASE (number (e 0 0)) (owner "FMSH"))
+            (property CLKOUT4_CASCADE (boolean (false)) (owner "FMSH"))
+            (property COMPENSATION (string "ZHOLD") (owner "FMSH"))
+            (property DIVCLK_DIVIDE (integer 1) (owner "FMSH"))
+            (property STARTUP_WAIT (boolean (false)) (owner "FMSH"))
+            (property PRESERVE (boolean (true)) (owner "FMSH"))
+            (property PROCISE_LINE_NUM (integer 80) (owner "FMSH"))
+            (property PROCISE_FILE_NAME (string "clk_wiz_0_clk_wiz.v") (owner "FMSH"))
+          )
+          (instance clkf_buf
+            (viewRef model0 (cellRef GLCLK (libraryRef UNISIMS)))
+            (property PRESERVE (boolean (true)) (owner "FMSH"))
+            (property PROCISE_LINE_NUM (integer 179) (owner "FMSH"))
+            (property PROCISE_FILE_NAME (string "clk_wiz_0_clk_wiz.v") (owner "FMSH"))
+          )
+          (instance clkout1_buf
+            (viewRef model0 (cellRef GLCLK (libraryRef UNISIMS)))
+            (property PRESERVE (boolean (true)) (owner "FMSH"))
+            (property PROCISE_LINE_NUM (integer 183) (owner "FMSH"))
+            (property PROCISE_FILE_NAME (string "clk_wiz_0_clk_wiz.v") (owner "FMSH"))
+          )
+          (instance (rename VCC "VCC")
+            (viewRef model0 (cellRef VCC (libraryRef UNISIMS)))
+          )
+          (net (rename x_const0_ "<const0>")
+            (joined
+              (portRef G (instanceRef GND))
+              (portRef CLKIN1 (instanceRef pll_mm_full_inst))
+              (portRef DRPCLK (instanceRef pll_mm_full_inst))
+              (portRef DRPEN (instanceRef pll_mm_full_inst))
+              (portRef DRPWE (instanceRef pll_mm_full_inst))
+              (portRef PSCLK (instanceRef pll_mm_full_inst))
+              (portRef PSEN (instanceRef pll_mm_full_inst))
+              (portRef PSINCDEC (instanceRef pll_mm_full_inst))
+              (portRef PWRDWN (instanceRef pll_mm_full_inst))
+              (portRef RST (instanceRef pll_mm_full_inst))
+              (portRef (member DRPADDR 6) (instanceRef pll_mm_full_inst))
+              (portRef (member DRPADDR 5) (instanceRef pll_mm_full_inst))
+              (portRef (member DRPADDR 4) (instanceRef pll_mm_full_inst))
+              (portRef (member DRPADDR 3) (instanceRef pll_mm_full_inst))
+              (portRef (member DRPADDR 2) (instanceRef pll_mm_full_inst))
+              (portRef (member DRPADDR 1) (instanceRef pll_mm_full_inst))
+              (portRef (member DRPADDR 0) (instanceRef pll_mm_full_inst))
+              (portRef (member DIN 15) (instanceRef pll_mm_full_inst))
+              (portRef (member DIN 14) (instanceRef pll_mm_full_inst))
+              (portRef (member DIN 13) (instanceRef pll_mm_full_inst))
+              (portRef (member DIN 12) (instanceRef pll_mm_full_inst))
+              (portRef (member DIN 11) (instanceRef pll_mm_full_inst))
+              (portRef (member DIN 10) (instanceRef pll_mm_full_inst))
+              (portRef (member DIN 9) (instanceRef pll_mm_full_inst))
+              (portRef (member DIN 8) (instanceRef pll_mm_full_inst))
+              (portRef (member DIN 7) (instanceRef pll_mm_full_inst))
+              (portRef (member DIN 6) (instanceRef pll_mm_full_inst))
+              (portRef (member DIN 5) (instanceRef pll_mm_full_inst))
+              (portRef (member DIN 4) (instanceRef pll_mm_full_inst))
+              (portRef (member DIN 3) (instanceRef pll_mm_full_inst))
+              (portRef (member DIN 2) (instanceRef pll_mm_full_inst))
+              (portRef (member DIN 1) (instanceRef pll_mm_full_inst))
+              (portRef (member DIN 0) (instanceRef pll_mm_full_inst))
+            )
+          )
+          (net clk_in1_clk_wiz_0
+            (joined
+              (portRef O (instanceRef clkin1_ibufg))
+              (portRef CLKIN0 (instanceRef pll_mm_full_inst))
+            )
+          )
+          (net clk_in1
+            (joined
+              (portRef clk_in1)
+              (portRef I (instanceRef clkin1_ibufg))
+            )
+          )
+          (net clkfbout_clk_wiz_0
+            (joined
+              (portRef CLKFBOUT (instanceRef pll_mm_full_inst))
+              (portRef CLKIN (instanceRef clkf_buf))
+            )
+          )
+          (net clk_out1_clk_wiz_0
+            (joined
+              (portRef CLKOUT0 (instanceRef pll_mm_full_inst))
+              (portRef CLKIN (instanceRef clkout1_buf))
+            )
+          )
+          (net clkfbout_buf_clk_wiz_0
+            (joined
+              (portRef CLKOUT (instanceRef clkf_buf))
+              (portRef CLKFBIN (instanceRef pll_mm_full_inst))
+            )
+          )
+          (net clk_out1
+            (joined
+              (portRef CLKOUT (instanceRef clkout1_buf))
+              (portRef clk_out1)
+            )
+          )
+          (net (rename pll_mm_full_inst_CLKINSEL "pll_mm_full_inst_CLKINSEL")
+            (joined
+              (portRef P (instanceRef VCC))
+              (portRef CLKINSEL (instanceRef pll_mm_full_inst))
+            )
+          )
+        )
+      )
+    )
+    (cell clk_wiz_0
+      (cellType GENERIC)
+      (view clk_wiz_0
+        (viewType NETLIST)
+        (interface
+          (port clk_out1
+            (direction OUTPUT))
+          (port clk_in1
+            (direction INPUT))
+        )
+        (contents
+          (instance inst
+            (viewRef clk_wiz_0_clk_wiz (cellRef clk_wiz_0_clk_wiz (libraryRef clk_wiz_0_lib)))
+            (property PROCISE_LINE_NUM (integer 25) (owner "FMSH"))
+            (property PROCISE_FILE_NAME (string "clk_wiz_0_synth.v") (owner "FMSH"))
+          )
+          (net clk_out1
+            (joined
+              (portRef clk_out1 (instanceRef inst))
+              (portRef clk_out1)
+            )
+          )
+          (net clk_in1
+            (joined
+              (portRef clk_in1)
+              (portRef clk_in1 (instanceRef inst))
+            )
+          )
+        )
+      )
+    )
+  )
+  (design clk_wiz_0
+    (cellRef clk_wiz_0
+      (libraryRef clk_wiz_0_lib))
+    (property PART (string "fmk50t4") (owner "FMSH")))
+)

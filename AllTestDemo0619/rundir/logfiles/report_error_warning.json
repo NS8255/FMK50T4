@@ -1,0 +1,83 @@
+{
+    "all": {
+        "error": [
+        ],
+        "warning": [
+            "    WARNING: PLACE-1501: IO port lcd_data[0] use I/O standard(IOSTANDARD) value \"DEFAULT\", instead of a user assigned specific value.\n\n",
+            "    WARNING: PLACE-1501: IO port lcd_data[1] use I/O standard(IOSTANDARD) value \"DEFAULT\", instead of a user assigned specific value.\n\n",
+            "    WARNING: PLACE-1501: IO port lcd_data[2] use I/O standard(IOSTANDARD) value \"DEFAULT\", instead of a user assigned specific value.\n\n",
+            "    WARNING: PLACE-1501: IO port lcd_data[3] use I/O standard(IOSTANDARD) value \"DEFAULT\", instead of a user assigned specific value.\n\n",
+            "    WARNING: PLACE-1501: IO port lcd_data[4] use I/O standard(IOSTANDARD) value \"DEFAULT\", instead of a user assigned specific value.\n\n",
+            "    WARNING: PLACE-1501: IO port lcd_data[5] use I/O standard(IOSTANDARD) value \"DEFAULT\", instead of a user assigned specific value.\n\n",
+            "    WARNING: PLACE-1501: IO port lcd_data[6] use I/O standard(IOSTANDARD) value \"DEFAULT\", instead of a user assigned specific value.\n\n",
+            "    WARNING: PLACE-1501: IO port lcd_data[7] use I/O standard(IOSTANDARD) value \"DEFAULT\", instead of a user assigned specific value.\n\n",
+            "  WARN(ELAB-W-109): C:/Users/23269/Desktop/QTestDemo/AllTestDemo0619/ip/clk_wiz_0/clk_wiz_0.v(7), empty port \"clk_in1\" on module \"clk_wiz_0\" declaration.  \n\n"
+        ]
+    },
+    "bitgen": {
+        "error": [
+        ],
+        "log": ">>bitgen AllTestDemo0619.bit -g bpi_sync_mode:Disable spi_32bit_addr:No spi_buswidth:1 Encrypt:No\n  preprocess elapsed_time 0.02 seconds, cpu_time 16.00 seconds\n  assemble bitstream elapsed_time 0.05 seconds, cpu_time -16.00 seconds\n  Writing out bitstream file AllTestDemo0619.bit\n  Writing out bgn file AllTestDemo0619.bgn\n  bitgen elapsed_time 0.80 seconds, cpu_time 0.94 seconds\n  bitgen used memory 316MB, procise used peak memory 971MB, current used memory 671MB\n\n"
+    },
+    "last_cmd": "load_design",
+    "last_cmd_stage": 8,
+    "load_design": {
+        "error": [
+        ],
+        "log": ">>load_design -stage_post_map -no_hier\n  -- Analyzing Verilog file 'C:/Users/23269/Desktop/QTestDemo/AllTestDemo0619/sources/AllTestDemo0619.v' (VERI-1482)\n  C:/Users/23269/Desktop/QTestDemo/AllTestDemo0619/sources/AllTestDemo0619.v(167): INFO: undeclared symbol 'clk_50M', assumed default net type 'wire' (VERI-2561)\n  read_phy_design C:/Users/23269/Desktop/QTestDemo/AllTestDemo0619/rundir/.25bed46ee5ec793ce98bb4282066ff45.phy\n  Read FDC C:/Users/23269/Desktop/QTestDemo/AllTestDemo0619/rundir/AllTestDemo0619_placed.fdc\n  load_design elapsed_time 1.10 seconds, cpu_time 1.11 seconds\n  load_design used memory 14MB, procise used peak memory 619MB, current used memory 563MB\n"
+    },
+    "out_of_date": {
+        "C:/Users/23269/Desktop/QTestDemo/AllTestDemo0619/rundir/AllTestDemo0619.bitgen": {
+            "last_modify": "2024-06-20 13:33:42",
+            "reason": "file saveThu Jun 20 15:24:57 2024"
+        },
+        "C:/Users/23269/Desktop/QTestDemo/AllTestDemo0619/rundir/AllTestDemo0619.place": {
+            "last_modify": "2024-06-20 13:33:40",
+            "reason": "file saveThu Jun 20 15:24:57 2024"
+        },
+        "C:/Users/23269/Desktop/QTestDemo/AllTestDemo0619/rundir/AllTestDemo0619.route": {
+            "last_modify": "2024-06-20 13:33:41",
+            "reason": "file saveThu Jun 20 15:24:57 2024"
+        }
+    },
+    "place": {
+        "error": [
+        ],
+        "log": ">>place -thread 4\n  Phase 1 Placer Initialization\n  Phase 1.1 Placer Initialization Core\n  Phase 1.1.6 Build Placer Netlist Model\n  Building SiteChkr ...\n    Done.\n  Phase 1.1.6 Build Placer Netlist Model | Time: 0.264s\n  Phase 1.1.5.2 Implementation Feasibility check\n  IO Utilization:\n    Number of bonded IOBs:                         43 out of     250   17%\n  \n  IOPAD Utilization:\n    Number of bonded IOPADs:                        0 out of      22    0%\n  \n  Specific Feature Utilization:\n    Number of RAMH18E1/FIFO18E1s:                   0 out of     150    0%\n    Number of RAMHFIFO36E1/FIFO36E1s:               0 out of      75    0%\n    Number of GCDU/GCDU_CTRLs:                      2 out of      32    6%\n      Number used as GCDUs:                         0\n      Number used as GCDU_CTRLs:                    2\n    Number of ISTCE2/ISTCE2_FINESTCs:               0 out of     250    0%\n    Number of ILGKE2/ILGKE3/ISSE2s:                 0 out of     250    0%\n    Number of OLGKE2/OLGKE3/OSSE2s:                 0 out of     250    0%\n    Number of PSU_IN/PSU_IN_PHYs:                   0 out of      20    0%\n    Number of PSU_OUT/PSU_OUT_PHYs:                 0 out of      20    0%\n    Number of JTBSs:                                0 out of       4    0%\n    Number of HCDU_CEs:                             0 out of      72    0%\n    Number of RCDUs:                                0 out of      20    0%\n    Number of CAPs:                                 0 out of       1    0%\n    Number of DNA_PORTs:                            0 out of       1    0%\n    Number of CU48E1s:                              0 out of     120    0%\n    Number of UNRECOVER_USRs:                       0 out of       1    0%\n    Number of SECTOR_ECCs:                          0 out of       1    0%\n    Number of UHST2E2_CHs:                          0 out of       4    0%\n    Number of UHST2E2_COMs:                         0 out of       1    0%\n    Number of IDU_DS_UHSTE2s:                       0 out of       2    0%\n    Number of UACs:                                 0 out of       2    0%\n    Number of ISTC_CTRLs:                           0 out of       5    0%\n    Number of IFIFOs:                               0 out of      20    0%\n    Number of DCCUE2_ADVs:                          1 out of       5   20%\n    Number of OFIFOs:                               0 out of      20    0%\n    Number of PCIE_2_1s:                            0 out of       1    0%\n    Number of PSU_REFs:                             0 out of       5    0%\n    Number of PHY_CTRLs:                            0 out of       5    0%\n    Number of PLLE2_ADVs:                           0 out of       5    0%\n    Number of BOOTUPs:                              0 out of       1    0%\n    Number of FADCs:                                0 out of       1    0%\n  \n  Phase 1.1.5.2 Implementation Feasibility check | Time: 0.267s\n  Phase 1.1.7 Constrain Clocks/Macros\n  Phase 1.1.7 Constrain Clocks/Macros | Time: 0.271s\n  Phase 1.1.5 IO Placement/ Clock Placement/ Build Placer Device\n    WARNING: PLACE-1501: IO port lcd_data[0] use I/O standard(IOSTANDARD) value \"DEFAULT\", instead of a user assigned specific value.\n    WARNING: PLACE-1501: IO port lcd_data[1] use I/O standard(IOSTANDARD) value \"DEFAULT\", instead of a user assigned specific value.\n    WARNING: PLACE-1501: IO port lcd_data[2] use I/O standard(IOSTANDARD) value \"DEFAULT\", instead of a user assigned specific value.\n    WARNING: PLACE-1501: IO port lcd_data[3] use I/O standard(IOSTANDARD) value \"DEFAULT\", instead of a user assigned specific value.\n    WARNING: PLACE-1501: IO port lcd_data[4] use I/O standard(IOSTANDARD) value \"DEFAULT\", instead of a user assigned specific value.\n    WARNING: PLACE-1501: IO port lcd_data[5] use I/O standard(IOSTANDARD) value \"DEFAULT\", instead of a user assigned specific value.\n    WARNING: PLACE-1501: IO port lcd_data[6] use I/O standard(IOSTANDARD) value \"DEFAULT\", instead of a user assigned specific value.\n    WARNING: PLACE-1501: IO port lcd_data[7] use I/O standard(IOSTANDARD) value \"DEFAULT\", instead of a user assigned specific value.\n  IO Placement: total number IdelayCtrl banks: 0\n  IO placement: total number of IO banks: 3\n  Phase 1.1.5 IO Placement/ Clock Placement/ Build Placer Device | Time: 0.284s\n  Phase 1.1.8 Build Shapes/ HD Config\n  Phase 1.1.8.1 Build Macros\n  Phase 1.1.8.1 Build Macros | Time: 0.284s\n  Phase 1.1.8 Build Shapes/ HD Config | Time: 0.284s\n  Phase 1.1.5 IO Placement/ Clock Placement/ Build Placer Device | Time: 0.284s\n  Phase 1.1 Placer Initialization Core | Time: 1.218s\n  Phase 1 Placer Initialization | Time: 1.218s\n  Phase 2 Global Placement\n  Phase 2.1 Distribute Placement\n  .  \n  .  .  .  .  .  .  \n  .  \n  Phase 2.1 Distribute Placement | Time: 1.529s\n  Phase 2.2 Legalize Placement\n  Phase 2.2 Legalize Placement | Time: 1.54s\n  Phase 2 Global Placement | Time: 1.541s\n  Generating physical netlist ... \n  \n                           DEVICE UTILIZATION                   \n  ------------------------------------------------------------------\n  resource                      used/available     utilization      \n  ------------------------------------------------------------------\n  DCCUE2_ADV                        1/5             20.00%\n  GCDU_CTRL                         2/32             6.25%\n  IOU33                             1/10            10.00%\n  IOU33M                           21/120           17.50%\n  IOU33S                           21/120           17.50%\n  LC                               29/8150           0.36%\n  ------------------------------------------------------------------\n  FDC_INFO! export constraints to file AllTestDemo0619_placed.fdc!\n  \"C:/Users/23269/Desktop/QTestDemo/AllTestDemo0619/rundir/AllTestDemo0619_placed.fdc\" is already in project.\n  Phase 3 Detail Placement\n  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  \n  Phase 3 Detail Placement | Time: 2.557s\n  Phase 4 Post Placement Optimization and Clean-Up\n  Phase 4.2 Post Placement Cleanup\n  Phase 4.2 Post Placement Cleanup | Time: 2.558s\n  Phase 4.4 Final Placement Cleanup\n  Phase 4.4 Final Placement Cleanup | Time: 2.558s\n  Phase 4 Post Placement Optimization and Clean-Up | Time: 2.558s\n  place elapsed_time 2.57 seconds, cpu_time 3.86 seconds\n  place used memory 150MB, procise used peak memory 708MB, current used memory 565MB\n\n",
+        "warning": [
+            "    WARNING: PLACE-1501: IO port lcd_data[0] use I/O standard(IOSTANDARD) value \"DEFAULT\", instead of a user assigned specific value.\n",
+            "    WARNING: PLACE-1501: IO port lcd_data[1] use I/O standard(IOSTANDARD) value \"DEFAULT\", instead of a user assigned specific value.\n",
+            "    WARNING: PLACE-1501: IO port lcd_data[2] use I/O standard(IOSTANDARD) value \"DEFAULT\", instead of a user assigned specific value.\n",
+            "    WARNING: PLACE-1501: IO port lcd_data[3] use I/O standard(IOSTANDARD) value \"DEFAULT\", instead of a user assigned specific value.\n",
+            "    WARNING: PLACE-1501: IO port lcd_data[4] use I/O standard(IOSTANDARD) value \"DEFAULT\", instead of a user assigned specific value.\n",
+            "    WARNING: PLACE-1501: IO port lcd_data[5] use I/O standard(IOSTANDARD) value \"DEFAULT\", instead of a user assigned specific value.\n",
+            "    WARNING: PLACE-1501: IO port lcd_data[6] use I/O standard(IOSTANDARD) value \"DEFAULT\", instead of a user assigned specific value.\n",
+            "    WARNING: PLACE-1501: IO port lcd_data[7] use I/O standard(IOSTANDARD) value \"DEFAULT\", instead of a user assigned specific value.\n"
+        ]
+    },
+    "route": {
+        "error": [
+        ],
+        "log": ">>route\n  DataModel: remove 1 TIE HIGH nets.\n  DataModel: create 11 dummy TIE HIGH nets.\n  DataModel: remove 1 TIE LOW nets.\n  DataModel: created 14 dummy TIE LOW nets.\n  DataModel: remove 24 PULL insts.\n  DataModel: remove 0 CU PULL insts.\n  DataModel: created 0 dummy LC insts.\n  Router: build routing data...\n  Router: 178 nets, 99 insts.\n  Router: sort net pins...\n  Router: initial routability-driven routing...\n  Router: No unrouted net\n  Router: 90 routing nodes have overflow, Time : 0.17 s\n  Router: 36 routing nodes have overflow, Time : 0.02 s\n  Router: 8 routing nodes have overflow, Time : 0.02 s\n  Router: 0 routing nodes have overflow, Time : 0.00 s\n  Router: routability driven finished elapsed_time 0.27 seconds, cpu_time 0.27 seconds\n  Router: pre-processing for timing-driven reroute...\n  Router: no valid timing constraint.\n  Router: successfully routed after 4 iterations.\n  Router: SIGNAL wirelength : 834.\n  Router: CLOCK wirelength  : 333.\n  Router: P/G wirelength    : 1.\n  Router: created 43 dummy I/O insts.\n  Router: created 3 dummy HCDU_CE insts.\n  route elapsed_time 1.07 seconds, cpu_time 1.06 seconds\n  route used memory 301MB, procise used peak memory 861MB, current used memory 684MB\n\n"
+    },
+    "rtl_analyze": {
+        "error": [
+        ],
+        "log": ">>rtl_analyze\n  rtl_analyze -> elaborate\n  WARN(ELAB-W-109): C:/Users/23269/Desktop/QTestDemo/AllTestDemo0619/ip/clk_wiz_0/clk_wiz_0.v(7), empty port \"clk_in1\" on module \"clk_wiz_0\" declaration.  \n  Info: SDB transformed into DM successfully.  \n  C:/Users/23269/Desktop/QTestDemo/AllTestDemo0619/sources/AllTestDemo0619.v(1): INFO: compiling module 'AllTestDemo0619_default' (VERI-1018)\n  write out edif file AllTestDemo0619_elaborate.edif\n  rtl_analyze -> read edif source files\n  rtl_analyze -> read ip edif files\n  read_edif C:/Users/23269/Desktop/QTestDemo/AllTestDemo0619/ip/clk_wiz_0/clk_wiz_0.edif\n  rtl_analyze -> bind_design -verbose 0\n  rtl_analyze -> uniquify\n  rtl_analyze -> read_fdc C:/Users/23269/Desktop/QTestDemo/AllTestDemo0619/constraints/constrs_1/AllTestDemo0619.fdc\n  rtl_analyze elapsed_time 0.08 seconds, cpu_time 0.11 seconds\n  rtl_analyze used memory 13MB, procise used peak memory 708MB, current used memory 499MB\n\n",
+        "warning": [
+            "  WARN(ELAB-W-109): C:/Users/23269/Desktop/QTestDemo/AllTestDemo0619/ip/clk_wiz_0/clk_wiz_0.v(7), empty port \"clk_in1\" on module \"clk_wiz_0\" declaration.  \n"
+        ]
+    },
+    "set_device": {
+        "error": [
+        ],
+        "log": ">>set_device fmk50t4\n  set_device elapsed_time 2.19 seconds, cpu_time 2.19 seconds\n  set_device used memory 551MB, procise used peak memory 619MB, current used memory 507MB\n\n"
+    },
+    "synthesize": {
+        "error": [
+        ],
+        "log": ">>synthesize\n  synthesize -> flatten\n  synthesize -> logic opt and lut mapping\n  synthesize -> insert_io -bufg_limit_cnt 16\n  write out edif file AllTestDemo0619.edif\n  FDC_INFO! export constraints to file AllTestDemo0619_synthesized.fdc!\n  \"C:/Users/23269/Desktop/QTestDemo/AllTestDemo0619/rundir/AllTestDemo0619_synthesized.fdc\" is already in project.\n  synthesize elapsed_time 0.14 seconds, cpu_time 0.14 seconds\n  synthesize used memory 27MB, procise used peak memory 708MB, current used memory 502MB\n\nplace -thread 4 ;write_phy_design {C:/Users/23269/Desktop/QTestDemo/AllTestDemo0619/rundir//.25bed46ee5ec793ce98bb4282066ff45_place.phy}\n"
+    },
+    "timer": {
+    }
+}

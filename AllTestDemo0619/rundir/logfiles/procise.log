@@ -1,0 +1,14 @@
+Procise 2023.2
+SVN Version : 29712
+Build  time : 2024/01/23 11:45:29
+Start  time : 2024-06-23 21:06:01
+>>set_device fmk50t4
+  set_device elapsed_time 2.19 seconds, cpu_time 2.19 seconds
+  set_device used memory 551MB, procise used peak memory 619MB, current used memory 507MB
+>>load_design -stage_post_map -no_hier
+  -- Analyzing Verilog file 'C:/Users/23269/Desktop/QTestDemo/AllTestDemo0619/sources/AllTestDemo0619.v' (VERI-1482)
+  C:/Users/23269/Desktop/QTestDemo/AllTestDemo0619/sources/AllTestDemo0619.v(167): INFO: undeclared symbol 'clk_50M', assumed default net type 'wire' (VERI-2561)
+  read_phy_design C:/Users/23269/Desktop/QTestDemo/AllTestDemo0619/rundir/.25bed46ee5ec793ce98bb4282066ff45.phy
+  Read FDC C:/Users/23269/Desktop/QTestDemo/AllTestDemo0619/rundir/AllTestDemo0619_placed.fdc
+  load_design elapsed_time 1.10 seconds, cpu_time 1.11 seconds
+  load_design used memory 14MB, procise used peak memory 619MB, current used memory 563MB

@@ -1,0 +1,31 @@
+route ;write_phy_design {C:/Users/23269/Desktop/QTestDemo/AllTestDemo0619/rundir//.25bed46ee5ec793ce98bb4282066ff45_route.phy} 
+>>route
+  DataModel: remove 1 TIE HIGH nets.
+  DataModel: create 11 dummy TIE HIGH nets.
+  DataModel: remove 1 TIE LOW nets.
+  DataModel: created 14 dummy TIE LOW nets.
+  DataModel: remove 24 PULL insts.
+  DataModel: remove 0 CU PULL insts.
+  DataModel: created 0 dummy LC insts.
+  Router: build routing data...
+  Router: 178 nets, 99 insts.
+  Router: sort net pins...
+  Router: initial routability-driven routing...
+  Router: No unrouted net
+  Router: 90 routing nodes have overflow, Time : 0.17 s
+  Router: 36 routing nodes have overflow, Time : 0.02 s
+  Router: 8 routing nodes have overflow, Time : 0.02 s
+  Router: 0 routing nodes have overflow, Time : 0.00 s
+  Router: routability driven finished elapsed_time 0.27 seconds, cpu_time 0.27 seconds
+  Router: pre-processing for timing-driven reroute...
+  Router: no valid timing constraint.
+  Router: successfully routed after 4 iterations.
+  Router: SIGNAL wirelength : 834.
+  Router: CLOCK wirelength  : 333.
+  Router: P/G wirelength    : 1.
+  Router: created 43 dummy I/O insts.
+  Router: created 3 dummy HCDU_CE insts.
+  route elapsed_time 1.07 seconds, cpu_time 1.06 seconds
+  route used memory 301MB, procise used peak memory 861MB, current used memory 684MB
+>>write_phy_design C:/Users/23269/Desktop/QTestDemo/AllTestDemo0619/rundir//.25bed46ee5ec793ce98bb4282066ff45_route.phy
+  write_phy_design used memory 0MB, procise used peak memory 861MB, current used memory 656MB
